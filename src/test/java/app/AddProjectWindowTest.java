@@ -40,6 +40,6 @@ public class AddProjectWindowTest {
                 expected = true;
             }
         }
-        Assert.assertEquals(expected, true);
+        Assert.assertTrue(expected);
     }
 }
