@@ -1,6 +1,11 @@
 package database;
 
 public class Const {
+
+    private Const() {
+        throw new IllegalStateException("Utility class");
+    }
+
     public static final String USER_TABLE = "users";
     public static final String USERS_ID = "idusers";
     public static final String USERS_FIRSTNAME = "firstname";
@@ -36,5 +41,9 @@ public class Const {
 
     public static final String TASK_NOT_PROJECT = "не указан";
 
-
+    public static final String INSERT_INTO = "INSERT INTO ";
+    public static final String WHERE = " WHERE ";
+    public static final String SELECT_ALL_FROM = "SELECT * FROM ";
+    public static final String EQUAL_QUATION_AND = "=? AND ";
+    public static final String EQUAL_QUATION = "=?;";
 }

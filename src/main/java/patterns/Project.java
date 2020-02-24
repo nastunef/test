@@ -1,11 +1,11 @@
 package patterns;
 
 public class Project {
-    private String id;
+    private final String id;
     private String nameProject;
     private String dateFrom;
     private String dateBefore;
-    private String idUser;
+    private final String idUser;
 
     public Project(String id, String nameProject, String dateFrom, String dateBefore, String idUser) {
         this.id = id;

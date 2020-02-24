@@ -3,7 +3,7 @@ package patterns;
 public class Task {
     private String id;
     private String name;
-    private String idProject;
+    private final String idProject;
     private String date;
     private String status;
 

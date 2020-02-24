@@ -45,7 +45,7 @@ public class AddTaskWindow extends ChildWindow {
         labelProject.setText("Проект");
 
         Button buttonAdd = new Button();
-        buttonAdd.setText(createButton);
+        buttonAdd.setText(CREATE_BUTTON);
         buttonAdd.setOnAction(event -> {
             String textTaskString = textTask.getText();
             if(!isEmptyString(textTaskString,labeInputName)) {
@@ -127,9 +127,9 @@ public class AddTaskWindow extends ChildWindow {
         addInDataBase(plan,task);
     }
     public static boolean isEmptyString(String str, Label label){
-        if(str.equals(stringEmpty)){
+        if(str.equals(STRING_EMPTY)){
             if(label != null) {
-                label.setText(errorEmptyString);
+                label.setText(ERROR_EMPTY_STRING);
             }
             return true;
         } else {

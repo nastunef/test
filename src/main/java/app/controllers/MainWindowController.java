@@ -55,7 +55,7 @@ public class MainWindowController {
         addTaskHyperlink.setOnAction(event -> {
             try {
                 addTask();
-            } catch (SQLException | ClassNotFoundException e) {
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
 
@@ -75,7 +75,7 @@ public class MainWindowController {
 
     }
 
-    private void addTask() throws SQLException, ClassNotFoundException {
+    private void addTask() throws SQLException {
         AddTaskWindow atw = new AddTaskWindow();
         atw.show();
     }

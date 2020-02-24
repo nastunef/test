@@ -24,15 +24,15 @@ public class AddProjectWindow extends ChildWindow {
 
         Label labelInputName = new Label();
         labelInputName.setPrefSize(130,20);
-        labelInputName.setText(titleInputNameProject);
+        labelInputName.setText(TITLE_INPUT_NAME_PROJECT);
 
         Button buttonAdd = new Button();
-        buttonAdd.setText(createButton);
+        buttonAdd.setText(CREATE_BUTTON);
 
         buttonAdd.setOnAction(event -> {
             String nameNewProject = nameProject.getText();
-            if(nameNewProject.equals(stringEmpty)){
-                labelInputName.setText(errorEmptyNameProject);
+            if(nameNewProject.equals(STRING_EMPTY)){
+                labelInputName.setText(ERROR_EMPTY_NAME_PROJECT);
             }
             else {
                 try {
@@ -60,7 +60,7 @@ public class AddProjectWindow extends ChildWindow {
         secondaryLayout.getChildren().add(labelInputName);
         secondaryLayout.getChildren().add(buttonAdd);
 
-        newWindow.setTitle(titleAddProject);
+        newWindow.setTitle(TITLE_ADD_PROJECT);
         newWindow.setScene(secondScene);
 
         newWindow.setX(500);
